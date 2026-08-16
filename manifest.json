@@ -1,0 +1,10 @@
+{
+  "name": "CCHS Student Portal",
+  "short_name": "CCHS Portal",
+  "description": "Chibombo College of Health Sciences Student Portal",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f2f5f8",
+  "theme_color": "#003b73",
+  "orientation": "portrait"
+}
