@@ -1,238 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#003b73">
-  <title>CCHS Student Portal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#003b73">
+    <title>CCHS Student Portal</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
 
-    body {
-      background: #f2f5f8;
-      color: #222;
-    }
+        body {
+            background: #f2f5f8;
+            color: #222;
+        }
 
-    header {
-      background: #003b73;
-      color: white;
-      padding: 25px 15px;
-      text-align: center;
-    }
+        header {
+            background: #003b73;
+            color: white;
+            padding: 25px 15px;
+            text-align: center;
+        }
 
-    header h1 {
-      font-size: 26px;
-      margin-bottom: 8px;
-    }
+        header h1 {
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
 
-    header p {
-      font-size: 14px;
-    }
+        header p {
+            font-size: 15px;
+        }
 
-    .container {
-      max-width: 1000px;
-      margin: 25px auto;
-      padding: 15px;
-    }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
 
-    .welcome {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    }
+        .welcome {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
 
-    .welcome h2 {
-      color: #003b73;
-      margin-bottom: 8px;
-    }
+        .welcome h2 {
+            color: #003b73;
+            margin-bottom: 8px;
+        }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-    }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
 
-    .card {
-      background: white;
-      padding: 25px 15px;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      cursor: pointer;
-      transition: 0.2s;
-    }
+        .card {
+            background: white;
+            padding: 25px 15px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            cursor: pointer;
+            transition: 0.2s;
+        }
 
-    .card:hover {
-      transform: translateY(-3px);
-    }
+        .card:hover {
+            transform: translateY(-3px);
+        }
 
-    .card h3 {
-      color: #003b73;
-      margin-bottom: 8px;
-    }
+        .card h3 {
+            color: #003b73;
+            margin-bottom: 8px;
+        }
 
-    .card p {
-      font-size: 13px;
-      color: #666;
-    }
+        .card p {
+            font-size: 14px;
+            color: #666;
+        }
 
-    .login {
-      background: white;
-      padding: 25px;
-      margin-top: 25px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    }
-
-    .login h2 {
-      color: #003b73;
-      margin-bottom: 15px;
-    }
-
-    input {
-      width: 100%;
-      padding: 12px;
-      margin: 8px 0;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-
-    button {
-      width: 100%;
-      padding: 12px;
-      background: #003b73;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
-      margin-top: 10px;
-    }
-
-    button:hover {
-      background: #00549f;
-    }
-
-    footer {
-      margin-top: 35px;
-      background: #003b73;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 13px;
-    }
-
-    .message {
-      margin-top: 15px;
-      text-align: center;
-      font-weight: bold;
-    }
-  </style>
+        footer {
+            margin-top: 30px;
+            background: #003b73;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 13px;
+        }
+    </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Chibombo College of Health Sciences</h1>
-    <p>CCHS Student Portal</p>
-  </header>
+    <header>
+        <h1>Chibombo College of Health Sciences</h1>
+        <p>CCHS Student Portal</p>
+    </header>
 
-  <div class="container">
+    <main class="container">
 
-    <div class="welcome">
-      <h2>Welcome to the CCHS Student Portal</h2>
-      <p>
-        Access your academic information, results, announcements,
-        timetable and student services in one place.
-      </p>
-    </div>
+        <section class="welcome">
+            <h2>Welcome to the Student Portal</h2>
+            <p>
+                Access your student information, academic results,
+                announcements and other college services.
+            </p>
+        </section>
 
-    <div class="cards">
+        <section class="cards">
 
-      <div class="card" onclick="showMessage('Academic Results')">
-        <h3>📚 Results</h3>
-        <p>View your academic results.</p>
-      </div>
+            <div class="card">
+                <h3>👤 Student Profile</h3>
+                <p>View your student information</p>
+            </div>
 
-      <div class="card" onclick="showMessage('Timetable')">
-        <h3>📅 Timetable</h3>
-        <p>View classes and examination schedules.</p>
-      </div>
+            <div class="card">
+                <h3>📚 Courses</h3>
+                <p>View your courses and modules</p>
+            </div>
 
-      <div class="card" onclick="showMessage('Announcements')">
-        <h3>📢 Announcements</h3>
-        <p>View important college announcements.</p>
-      </div>
+            <div class="card">
+                <h3>📊 Results</h3>
+                <p>Check your academic results</p>
+            </div>
 
-      <div class="card" onclick="showMessage('Student Services')">
-        <h3>🎓 Student Services</h3>
-        <p>Access student support services.</p>
-      </div>
+            <div class="card">
+                <h3>📢 Announcements</h3>
+                <p>View college announcements</p>
+            </div>
 
-    </div>
+            <div class="card">
+                <h3>📅 Timetable</h3>
+                <p>View your class timetable</p>
+            </div>
 
-    <div class="login">
-      <h2>Student Login</h2>
+            <div class="card">
+                <h3>📄 Documents</h3>
+                <p>Access important documents</p>
+            </div>
 
-      <input
-        type="text"
-        id="studentNumber"
-        placeholder="Student Number"
-      >
+        </section>
 
-      <input
-        type="password"
-        id="password"
-        placeholder="Password"
-      >
+    </main>
 
-      <button onclick="login()">Login</button>
-
-      <div class="message" id="message"></div>
-    </div>
-
-  </div>
-
-  <footer>
-    <p>© 2026 Chibombo College of Health Sciences</p>
-    <p>CCHS Student Portal</p>
-  </footer>
-
-  <script>
-    function login() {
-      const studentNumber =
-        document.getElementById("studentNumber").value;
-
-      const password =
-        document.getElementById("password").value;
-
-      const message =
-        document.getElementById("message");
-
-      if (studentNumber === "" || password === "") {
-        message.textContent =
-          "Please enter your student number and password.";
-        message.style.color = "red";
-        return;
-      }
-
-      message.textContent =
-        "Login system will be connected to the student database in the next stage.";
-      message.style.color = "green";
-    }
-
-    function showMessage(section) {
-      alert(section + " will be available in the next stage.");
-    }
-  </script>
+    <footer>
+        © 2026 Chibombo College of Health Sciences
+    </footer>
 
 </body>
 </html>
