@@ -152,6 +152,14 @@
     <footer>
         © 2026 Chibombo College of Health Sciences
     </footer>
-
+<script>
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("sw.js")
+            .then(() => console.log("CCHS Service Worker registered"))
+            .catch(error => console.log("Service Worker error:", error));
+    });
+}
+</script>
 </body>
 </html>
